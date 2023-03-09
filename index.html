@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign-Up Form</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
@@ -17,35 +20,45 @@
          <div class="content">
             <div class="hero">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam impedit mollitia nulla labore, quae blanditiis illum cupiditate libero? Quae vel soluta, ea optio ad aut iusto harum adipisci in earum.</p>
-                <p>You <em>know</em> you want to!</p>
+                <p>Lorem <em>ipsum</em> dolor sit amet consectetur adipisicing elit.</p>
             </div>
+            
             <div class="form">
-                <h2>Let's Sign You Up!</h2>
+                <h3>Sign Up Now!</h3>
 
+
+                <!-- 
+                    TODO: 
+                    - make form items spread evenly into rows/columns (3x2 or 2x3) 
+                    - reduce vertical gap between items
+                    - box shadow and lighter border on focus of inputs
+                    - give form section box shadow
+                -->
                 <div class="formcontainer">
-                    <div class="formgroup 1">
-                        <label for="fName ">First Name</label>
+                    <div class="formgroup one">
+                        <label for="fName ">*First Name</label><br>
                         <input type="text" id="fName">
                     </div>
-                    <div class="formgroup 2">
-                        <label for="lName">Last Name</label>
+                    <div class="formgroup two">
+                        <label for="lName">*Last Name</label><br>
                         <input type="text" name="LName" id="lName">
                     </div>
-                    <div class="formgroup 3">
-                        <label for="email">Email</label>
+                    <div class="formgroup three">
+                        <label for="email">*Email</label><br>
                         <input type="email" id="email" name="email">
                     </div>
-                    <div class="formgroup 4">
-                        <label for="phone">Phone Number</label>
+                    <div class="formgroup four">
+                        <label for="phone">Phone Number</label><br>
                         <input type="tel" id="phone" name="phone">
                     </div>
-                    <div class="formgroup 5">
-                        <label for="password">Password</label>
-                        <input type="password" name="password" id="password">
+                    <div class="formgroup five">
+                        <label for="password">*Password</label><br>
+                        <input type="password" name="password" id="password" class="error">
+                        <p class="error">*Passwords do not match</p>
                     </div>
-                    <div class="formgroup 6">
-                        <label for="confirmpassword">Confirm Password</label>
-                        <input type="password" id="confirmpassword" name="confirmpassword">
+                    <div class="formgroup six">
+                        <label for="confirmpassword">*Confirm Password</label><br>
+                        <input type="password" id="confirmpassword" name="confirmpassword" class="error">
                     </div>
                 </div>
             </div>
