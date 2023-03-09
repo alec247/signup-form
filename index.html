@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <script src="index.js" defer></script>
 </head>
 <body>
     <div class="container">
@@ -53,12 +54,12 @@
                     </div>
                     <div class="formgroup five">
                         <label for="password">*Password</label><br>
-                        <input type="password" name="password" id="password" class="error">
-                        <p class="error">*Passwords do not match</p>
+                        <input type="password" name="password" id="password">
+                        <p class="error" id="errorMessage"></p>
                     </div>
                     <div class="formgroup six">
                         <label for="confirmpassword">*Confirm Password</label><br>
-                        <input type="password" id="confirmpassword" name="confirmpassword" class="error">
+                        <input type="password" id="confirmpassword" name="confirmpassword">
                     </div>
                 </div>
             </div>
